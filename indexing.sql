@@ -28,5 +28,10 @@ SELECT make_code, model_code, model_title, year
   WHERE make_code = 'LAM';
 
 --4
+SELECT * FROM car_models
+  WHERE year > 2009 AND year < 2016;
 
 --5
+SELECT *
+  FROM car_models
+  WHERE year = 2010;
