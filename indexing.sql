@@ -1,16 +1,19 @@
-/*Make a note of the time of each query with \timing*/
-
-/*SELECT DISTINCT make_title FROM car_models WHERE make_code = 'LAM';*/
-
-/*SELECT DISTINCT model_title FROM car_models WHERE make_code = 'NISSAN' AND model_code = 'GT-R';*/
-
-/*SELECT make_code, model_code, model_title, year FROM car_models WHERE make_code = 'LAM';*/
-
-/*SELECT * FROM car_models WHERE year > 2009 AND year < 2016;*/
-
-/*SELECT * FROM car_models WHERE year = 2010;*/
-
 \timing
+
+DROP TABLE IF EXISTS car_models;
+
+\connect indexed_cars
+\i scripts/car_models.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
+\i scripts/car_model_data.sql
 
 --1
 SELECT DISTINCT make_title
@@ -35,3 +38,5 @@ SELECT * FROM car_models
 SELECT *
   FROM car_models
   WHERE year = 2010;
+
+\timing
